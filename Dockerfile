@@ -1,4 +1,2 @@
-FROM klakegg/hugo:ext-alpine
-
-RUN apk add git && \
-  git config --global --add safe.directory /src
+FROM ubuntu:20.04
+CMD echo "Hello World from a container running on $(uname -m);"
